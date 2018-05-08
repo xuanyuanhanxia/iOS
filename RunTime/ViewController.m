@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
 @end
 
@@ -26,20 +27,14 @@
     NSString *tempPath = NSTemporaryDirectory();
     NSString *filePath = [tempPath stringByAppendingPathComponent:@"person.data"];
     if ([NSKeyedArchiver archiveRootObject:p toFile:filePath]) {
-        NSLog(@"保存成功");
+        self.infoLabel.text = @"保存成功";
     }
 }
 - (IBAction)readInfo:(id)sender {
     NSString *tempPath = NSTemporaryDirectory();
     NSString *filePath = [tempPath stringByAppendingPathComponent:@"person.data"];
     Person *p = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
-    NSLog(@"p.name=%@  p.age=%d  p.ID=%@",p.name,p.age,p.ID);
+    self.infoLabel.text = [NSString stringWithFormat:@"p.name=%@  p.age=%d  p.ID=%@",p.name,p.age,p.ID];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
