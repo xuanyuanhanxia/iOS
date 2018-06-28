@@ -18,6 +18,7 @@
 		E7BC3EA520A18CAB00121BB8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BC3EA420A18CAB00121BB8 /* Person.m */; };
 		E7BC3EA820A1ADE800121BB8 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BC3EA720A1ADE800121BB8 /* ViewController2.m */; };
 		E7BC3EAE20A1B01800121BB8 /* NSURL+SSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BC3EAD20A1B01800121BB8 /* NSURL+SSURL.m */; };
+		E7DE92BE20E480C300E9E239 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DE92BD20E480C300E9E239 /* ViewController3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		E7BC3EA720A1ADE800121BB8 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		E7BC3EAC20A1B01800121BB8 /* NSURL+SSURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+SSURL.h"; sourceTree = "<group>"; };
 		E7BC3EAD20A1B01800121BB8 /* NSURL+SSURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SSURL.m"; sourceTree = "<group>"; };
+		E7DE92BC20E480C300E9E239 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		E7DE92BD20E480C300E9E239 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				E7BC3E7520A18BF600121BB8 /* ViewController.m */,
 				E7BC3EA620A1ADE800121BB8 /* ViewController2.h */,
 				E7BC3EA720A1ADE800121BB8 /* ViewController2.m */,
+				E7DE92BC20E480C300E9E239 /* ViewController3.h */,
+				E7DE92BD20E480C300E9E239 /* ViewController3.m */,
 				E7BC3E7720A18BF700121BB8 /* Main.storyboard */,
 				E7BC3E7A20A18BF900121BB8 /* Assets.xcassets */,
 				E7BC3E7C20A18BF900121BB8 /* LaunchScreen.storyboard */,
@@ -283,6 +288,7 @@
 				E7BC3EA520A18CAB00121BB8 /* Person.m in Sources */,
 				E7BC3EAE20A1B01800121BB8 /* NSURL+SSURL.m in Sources */,
 				E7BC3E7320A18BF600121BB8 /* AppDelegate.m in Sources */,
+				E7DE92BE20E480C300E9E239 /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

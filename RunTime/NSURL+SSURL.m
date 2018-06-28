@@ -13,6 +13,8 @@
  文件预编译 发生在 程序主函数之前 所以load方法一旦交换方法的实现 工程通过selector调用方法时已经发生变化
  */
 + (void)load {
+    //获取类方法 class_getClassMethod
+    //获取对象方法 class_getInstanceMethod
     Method method1 = class_getClassMethod(self, @selector(URLWithString:));
     Method method2 = class_getClassMethod(self, @selector(SSURLWithString:));
     method_exchangeImplementations(method1,method2);
